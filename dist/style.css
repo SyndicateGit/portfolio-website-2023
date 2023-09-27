@@ -22,7 +22,7 @@
 body{
   height: 100vh;
   background-color: var(--night-background1);
-  padding: 1em;
+  padding: 2em;
   color: var(--font-light);
 }
 
@@ -46,7 +46,7 @@ section.left{
 section.right{
   display: flex;
   flex:3;
-  min-width: 95%;
+  min-width: 80%;
   background-color: var(--night-background2);
 
 }
