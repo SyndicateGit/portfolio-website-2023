@@ -1,0 +1,39 @@
+:root{
+  --gold: #ffc406;
+  --night-background1: #111827;
+  --night-background2: #20202a;
+  --night-background3:#2c2c37;
+  --night-background4:#8c8cae;
+
+  --font-light: white;
+  --font-grey: #8c8cae;
+}
+
+body{
+  height: 100vh;
+  background-color: var(--night-background1);
+  padding: 1em;
+  color: var(--font-light);
+}
+
+.content{
+  display: flex;
+  height: 100%;
+  min-height: 0;
+}
+
+section{
+  
+}
+
+section.left{
+  display: grid;
+  background-color: var(--night-background3);
+  flex: 1;
+}
+
+section.right{
+  display: flex;
+  flex:3;
+  background-color: var(--night-background2);
+}
