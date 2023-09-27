@@ -1,14 +1,24 @@
 :root{
   --gold: #ffc406;
   --night-background1: #111827;
-  --night-background2: #20202a;
-  --night-background3:#2c2c37;
-  --night-background4:#8c8cae;
+  --night-background2: #1c2332;
+  --night-background3:#23232d;
+  --night-background4: rgb(94, 94, 99);
+  --night-background5:#8c8cae;
+
 
   --font-light: white;
   --font-grey: #8c8cae;
 }
 
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  
+}
+
+/*Page Layout*/
 body{
   height: 100vh;
   background-color: var(--night-background1);
@@ -27,13 +37,133 @@ section{
 }
 
 section.left{
-  display: grid;
   background-color: var(--night-background3);
-  flex: 1;
+  flex: 0;
+  min-width: 300px;
+  width: 300px;
 }
 
 section.right{
   display: flex;
   flex:3;
+  min-width: 95%;
   background-color: var(--night-background2);
+
 }
+
+/*Section Left*/
+.info-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+
+  height: 100%;
+}
+
+.info-container>div{
+  padding: 20px;
+}
+
+.info-profile{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  gap: 10px;
+
+  flex: 1.5;
+
+  background-color: #23232d;
+}
+
+.info-profile>p{
+  color: var(--night-background5);
+}
+
+/*Circle profile pic*/
+.profile-pic{
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+
+  background-image: url(./img/pfp.jpeg);
+
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.info-body{
+  background-color: #1d1d26;
+  width: 100%;
+  flex: 1;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+ 
+}
+
+.info-body>span{
+  color: #8c8cae;
+  justify-self: flex-end;
+}
+
+.info-hobbies{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  gap: 25%;
+  
+  width: 100%;
+  color: #ffc406;
+  background-color: #1d1d26;
+}
+
+.hobbies-container{
+  display: flex;
+  gap: 15px;
+}
+.hobby{
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.rock-climbing{
+  background-image: url(./img/rock-climbing.png);
+}
+
+.chess{
+  background-image: url(./img/chess.png);
+}
+
+.web-dev{
+  background-image: url(./img/web-dev.png);
+}
+
+.info-socials{
+  flex: 0;
+
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.socials-icon{
+  width: 40px;
+  height: 40px;
+
+  filter: invert(67%) sepia(73%) saturate(562%) hue-rotate(357deg) brightness(104%) contrast(101%);
+}
+
+
