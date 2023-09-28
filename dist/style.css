@@ -64,6 +64,9 @@ section.right{
   color: var(--gold);
 }
 
+.grey-font{
+  color: #8c8cae;
+}
 
 /*Section Left*/
 .info-container{
@@ -263,13 +266,12 @@ img.tech-icon{
 
 .works{
   width: 100%;
-  gap: 30px;
 }
 
 .projects{
   width: 100%;
   height: 300px;
-  
+  margin-top: 30px;
 }
 
 .project{
@@ -280,11 +282,65 @@ img.tech-icon{
 
   display: grid;
   grid-template-columns: 1fr 1fr;
+
+  justify-items: start;
+  align-items: center;
+
+  row-gap: 10px;
 }
+
+.project-left{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  width: 100%;
+  gap: 10px;
+}
+
 .odd{
-
+  background-color: #23232d
 }
 
+.even{
+  background-color: #111827;
+}
+
+/*Gets rid of default button style*/
+button{
+  background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+.project-button{
+  width: 130px;
+  height: 40px;
+  background-color: #ffc406;
+  color: black;
+  font-size: 1.1rem;
+}
+
+.project-button2{
+  width: 130px;
+  height: 40px;
+  background-color: #8c8cae;
+  color: black;
+  font-size: 1.1rem;
+}
 footer{
 padding: 0px;
+margin-top: 30px;
+
+width: 100%;
+height: 300px;
+
+background-color: #111827;
+
+padding: 20px;
+
 }
+
