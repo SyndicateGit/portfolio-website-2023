@@ -21,6 +21,7 @@
 /*Page Layout*/
 body{
   height: 100vh;
+
   background-color: var(--night-background1);
   padding: 2em;
   color: var(--font-light);
@@ -41,14 +42,20 @@ section.left{
   flex: 0;
   min-width: 300px;
   width: 300px;
+  
+  /*Left section static while right section scrolls*/
+  overflow: hidden;
+  position: static;
 }
 
 section.right{
   display: flex;
   flex:3;
-  min-width: 80%;
+  min-width: clamp(300px, calc(80vw - 300px), 700px);
   background-color: var(--night-background2);
 
+  /*Allows right section to scroll*/
+  overflow: auto;
 }
 
 /*Section Left*/
