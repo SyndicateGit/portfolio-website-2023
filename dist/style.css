@@ -287,6 +287,7 @@ img.tech-icon{
   align-items: center;
 
   row-gap: 10px;
+  column-gap: 30px;
 }
 
 .project-left{
@@ -306,22 +307,22 @@ img.tech-icon{
   background-color: #111827;
 }
 
-/*Gets rid of default button style*/
-button{
-  background: none;
-	color: inherit;
-	border: none;
-	padding: 0;
-	font: inherit;
-	cursor: pointer;
-	outline: inherit;
+a, a:hover, a:active, a:visited, a:focus{
+  text-decoration: none;
 }
+
+
 .project-button{
   width: 130px;
   height: 40px;
   background-color: #ffc406;
   color: black;
   font-size: 1.1rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 
 .project-button2{
@@ -330,7 +331,29 @@ button{
   background-color: #8c8cae;
   color: black;
   font-size: 1.1rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
+
+.project-right{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+}
+
+.project-screenshot{
+  width: auto;
+  max-width: 100%;
+  height: 260px;
+  object-fit: contain;
+}
+
 footer{
 padding: 0px;
 margin-top: 30px;
