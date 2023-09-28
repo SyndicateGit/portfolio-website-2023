@@ -233,6 +233,8 @@ main{
 .technologies{
   height: 300px;
   width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .tech-icons{
@@ -240,9 +242,10 @@ main{
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-
+  gap: 30px;
   width: 100%;
   margin-top: 10px;
+  height: 100%;
 }
 
 div.tech-icon{
@@ -250,10 +253,22 @@ div.tech-icon{
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 10px;
 }
+
 img.tech-icon{
-  width: 40px;
-  height: 40px;
+  width: auto;
+  height: 50px;
+}
+
+.works{
+  width: 100%;
+  height: 300px;
+
+}
+
+.projects{
+  
 }
 
 footer{
