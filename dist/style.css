@@ -9,6 +9,8 @@
 
   --font-light: white;
   --font-grey: #8c8cae;
+
+  font-family: 'Poppins', sans-serif;
 }
 
 *{
@@ -151,7 +153,7 @@ section.right{
 
 .hobbies-container{
   display: flex;
-  gap: 15px;
+  gap: 20px;
 }
 .hobby{
   width: 75px;
@@ -356,7 +358,7 @@ a, a:hover, a:active, a:visited, a:focus{
 
 footer{
 padding: 0px;
-margin-top: 30px;
+margin-top: 20px;
 
 width: 100%;
 height: 300px;
