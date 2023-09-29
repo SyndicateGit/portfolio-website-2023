@@ -23,7 +23,6 @@
 /*Page Layout*/
 body{
   height: 100vh;
-
   background-color: var(--night-background1);
   padding: 2em;
   color: var(--font-light);
@@ -35,9 +34,12 @@ body{
 
 .content{
   display: flex;
+  width: 100%;
   height: 100%;
   min-height: 0;
 }
+
+
 
 section{
   
@@ -45,9 +47,9 @@ section{
 
 section.left{
   background-color: var(--night-background3);
-  flex: 0;
-  min-width: 300px;
-  width: 300px;
+  flex: 1;
+  max-width: 400px;
+  min-width: 280px;
   
   /*Left section static while right section scrolls*/
   overflow: hidden;
@@ -56,10 +58,12 @@ section.left{
 
 section.right{
   flex:3;
-  min-width: 600px;
+  min-width: 700px;
   max-width: 1200px;
   background-color: var(--night-background2);
 }
+
+
 
 /*Gold fonts*/
 .gold{
@@ -104,8 +108,8 @@ section.right{
 
 /*Circle profile pic*/
 .profile-pic{
-  width: 120px;
-  height: 120px;
+  min-width: 120px;
+  min-height: 120px;
   border-radius: 50%;
 
   background-image: url(./img/pfp.jpeg);
@@ -278,7 +282,7 @@ img.tech-icon{
 
 .project{
   width: 100%;
-  height: 300px;
+  min-height: 300px;
 
   padding: 30px;
 
@@ -298,6 +302,7 @@ img.tech-icon{
   justify-content: start;
   align-items: start;
   width: 100%;
+  min-width: 300px;
   gap: 10px;
 }
 
@@ -315,11 +320,11 @@ a, a:hover, a:active, a:visited, a:focus{
 
 
 .project-button{
-  width: 140px;
-  height: 45px;
+  min-width: 140px;
+  min-height: 45px;
   background-color: #ffc406;
   color: black;
-  font-size: 1rem;
+ 
 
   display: flex;
   align-items: center;
@@ -328,11 +333,11 @@ a, a:hover, a:active, a:visited, a:focus{
 }
 
 .project-button2{
-  width: 140px;
-  height: 50px;
+  min-width: 140px;
+  min-height: 50px;
   background-color: #8c8cae;
   color: black;
-  font-size: 1rem;
+
 
   display: flex;
   align-items: center;
@@ -347,12 +352,13 @@ a, a:hover, a:active, a:visited, a:focus{
   justify-content: center;
 
   width: 100%;
+  min-width: 300px;
 }
 
 .project-screenshot{
   width: auto;
   max-width: 100%;
-  height: 260px;
+  max-height: 260px;
   object-fit: contain;
 }
 
@@ -361,7 +367,7 @@ padding: 0px;
 margin-top: 20px;
 
 width: 100%;
-height: 300px;
+min-height: 300px;
 
 background-color: #111827;
 
@@ -395,3 +401,41 @@ a{
   color: #ffc406;
 }
 
+@media (max-width: 1000px){
+  .content{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  section.left{
+    position: relative;
+    height: fit-content;
+    overflow: auto;
+    min-width: max(92vw);
+  }
+
+  section.right{
+    overflow:visible;
+    min-width: 100%;
+    min-width: max(92vw);
+  }
+
+  .project-left{
+    min-width: fit-content;
+  }
+  .project-right{
+    min-width: fit-content;
+  }
+
+  body{
+    height: auto;
+  }
+}
+
+@media (max-width: 600px){
+  :root{
+    font-size: 0.7rem;
+  }
+}
