@@ -315,11 +315,11 @@ a, a:hover, a:active, a:visited, a:focus{
 
 
 .project-button{
-  width: 130px;
-  height: 40px;
+  width: 140px;
+  height: 45px;
   background-color: #ffc406;
   color: black;
-  font-size: 1.1rem;
+  font-size: 1rem;
 
   display: flex;
   align-items: center;
@@ -328,11 +328,11 @@ a, a:hover, a:active, a:visited, a:focus{
 }
 
 .project-button2{
-  width: 130px;
-  height: 40px;
+  width: 140px;
+  height: 50px;
   background-color: #8c8cae;
   color: black;
-  font-size: 1.1rem;
+  font-size: 1rem;
 
   display: flex;
   align-items: center;
